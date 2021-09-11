@@ -20,6 +20,10 @@ class PageBloc extends Bloc<PageEvent, PageState> {
       yield OnSplashPage();
     } else if (event is GoToMainPage) {
       yield OnMainPage();
+    } else if (event is GoToAddChatPage) {
+      yield OnAddChatPage();
+    } else if (event is GoToAddCallPage) {
+      yield OnAddCallPage();
     }
   }
 }

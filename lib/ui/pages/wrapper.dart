@@ -18,11 +18,12 @@ class Wrapper extends StatelessWidget {
     }
 
     return BlocBuilder<PageBloc, PageState>(
-      builder: (_, pageState) => (pageState is OnSplashPage)
-          ? SplashPage()
-          : (pageState is OnLoginPage)
-              ? LoginPage()
-              : MainPage(),
-    );
+        builder: (_, pageState) => (pageState is OnSplashPage)
+            ? SplashPage()
+            : (pageState is OnLoginPage)
+                ? LoginPage()
+                : (pageState is OnAddChatPage)
+                    ? AddChatPages()
+                    : MainPage());
   }
 }

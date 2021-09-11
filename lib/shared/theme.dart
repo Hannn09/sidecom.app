@@ -12,3 +12,9 @@ TextStyle whiteTextStyle = GoogleFonts.montserrat()
 
 TextStyle greenTextStyle = GoogleFonts.montserrat()
     .copyWith(color: greenColor, fontWeight: FontWeight.w700);
+
+TextStyle greyTextStyle = GoogleFonts.montserrat()
+    .copyWith(color: Color(0xFF4F4F4F), fontWeight: FontWeight.w500);
+
+TextStyle blackTextStyle = GoogleFonts.montserrat()
+    .copyWith(color: Color(0xFF090909), fontWeight: FontWeight.w500);

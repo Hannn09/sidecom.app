@@ -18,3 +18,13 @@ class GoToMainPage extends PageEvent {
   @override
   List<Object> get props => [];
 }
+
+class GoToAddChatPage extends PageEvent {
+  @override
+  List<Object> get props => [];
+}
+
+class GoToAddCallPage extends PageEvent {
+  @override
+  List<Object> get props => [];
+}
